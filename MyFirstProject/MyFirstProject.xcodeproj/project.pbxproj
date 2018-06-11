@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A220CA207B006FC7BC /* WJDTabBarVC.m */; };
+		75A351A620CA20A7006FC7BC /* WJDNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */; };
+		75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A820CA20D7006FC7BC /* WJDBaseViewController.m */; };
+		75A351AC20CA2155006FC7BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351AB20CA2155006FC7BC /* ViewController.m */; };
+		75A351AF20CA6DE3006FC7BC /* WJDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351AE20CA6DE3006FC7BC /* WJDTabBar.m */; };
+		75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351B220CA6E97006FC7BC /* UIView+Frame.m */; };
+		75BEB62920CE46BC0061D031 /* WJDReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEB62820CE46BC0061D031 /* WJDReflection.m */; };
 		75D260492020081400605DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D260482020081400605DAD /* AppDelegate.m */; };
-		75D2604C2020081400605DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2604B2020081400605DAD /* ViewController.m */; };
 		75D2604F2020081400605DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D2604D2020081400605DAD /* Main.storyboard */; };
 		75D260512020081400605DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D260502020081400605DAD /* Assets.xcassets */; };
 		75D260542020081400605DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D260522020081400605DAD /* LaunchScreen.storyboard */; };
@@ -35,11 +41,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75A351A120CA207B006FC7BC /* WJDTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDTabBarVC.h; sourceTree = "<group>"; };
+		75A351A220CA207B006FC7BC /* WJDTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDTabBarVC.m; sourceTree = "<group>"; };
+		75A351A420CA20A7006FC7BC /* WJDNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationVC.h; sourceTree = "<group>"; };
+		75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDNavigationVC.m; sourceTree = "<group>"; };
+		75A351A720CA20D7006FC7BC /* WJDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDBaseViewController.h; sourceTree = "<group>"; };
+		75A351A820CA20D7006FC7BC /* WJDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDBaseViewController.m; sourceTree = "<group>"; };
+		75A351AA20CA2155006FC7BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		75A351AB20CA2155006FC7BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		75A351AD20CA6DE3006FC7BC /* WJDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDTabBar.h; sourceTree = "<group>"; };
+		75A351AE20CA6DE3006FC7BC /* WJDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDTabBar.m; sourceTree = "<group>"; };
+		75A351B120CA6E97006FC7BC /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		75A351B220CA6E97006FC7BC /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		75A351B620CA743B006FC7BC /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		75BEB62720CE46BC0061D031 /* WJDReflection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDReflection.h; sourceTree = "<group>"; };
+		75BEB62820CE46BC0061D031 /* WJDReflection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDReflection.m; sourceTree = "<group>"; };
 		75D260442020081400605DAD /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D260472020081400605DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75D260482020081400605DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		75D2604A2020081400605DAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		75D2604B2020081400605DAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		75D2604E2020081400605DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75D260502020081400605DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75D260532020081400605DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +97,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A3519020CA1DDD006FC7BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75A351AA20CA2155006FC7BC /* ViewController.h */,
+				75A351AB20CA2155006FC7BC /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75A3519120CA1E3E006FC7BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75A3519220CA1E57006FC7BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75A3519A20CA1F6E006FC7BC /* WJD */ = {
+			isa = PBXGroup;
+			children = (
+				75A3519E20CA2012006FC7BC /* WJDTabBar */,
+				75A3519F20CA2034006FC7BC /* WJDNavigation */,
+				75A351A020CA204D006FC7BC /* WJDViewController */,
+			);
+			path = WJD;
+			sourceTree = "<group>";
+		};
+		75A3519E20CA2012006FC7BC /* WJDTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				75A351A120CA207B006FC7BC /* WJDTabBarVC.h */,
+				75A351A220CA207B006FC7BC /* WJDTabBarVC.m */,
+				75A351AD20CA6DE3006FC7BC /* WJDTabBar.h */,
+				75A351AE20CA6DE3006FC7BC /* WJDTabBar.m */,
+			);
+			path = WJDTabBar;
+			sourceTree = "<group>";
+		};
+		75A3519F20CA2034006FC7BC /* WJDNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				75A351A420CA20A7006FC7BC /* WJDNavigationVC.h */,
+				75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */,
+			);
+			path = WJDNavigation;
+			sourceTree = "<group>";
+		};
+		75A351A020CA204D006FC7BC /* WJDViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75A351A720CA20D7006FC7BC /* WJDBaseViewController.h */,
+				75A351A820CA20D7006FC7BC /* WJDBaseViewController.m */,
+			);
+			path = WJDViewController;
+			sourceTree = "<group>";
+		};
+		75A351B020CA6E2D006FC7BC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				75A351B120CA6E97006FC7BC /* UIView+Frame.h */,
+				75A351B220CA6E97006FC7BC /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		75A351B420CA7356006FC7BC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				75A351B620CA743B006FC7BC /* CommonHeader.h */,
+				75BEB62720CE46BC0061D031 /* WJDReflection.h */,
+				75BEB62820CE46BC0061D031 /* WJDReflection.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		75D2603B2020081400605DAD = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +201,14 @@
 		75D260462020081400605DAD /* MyFirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				75A3519A20CA1F6E006FC7BC /* WJD */,
+				75A3519020CA1DDD006FC7BC /* Controllers */,
+				75A3519120CA1E3E006FC7BC /* Views */,
+				75A3519220CA1E57006FC7BC /* Model */,
+				75A351B020CA6E2D006FC7BC /* Category */,
+				75A351B420CA7356006FC7BC /* Common */,
 				75D260472020081400605DAD /* AppDelegate.h */,
 				75D260482020081400605DAD /* AppDelegate.m */,
-				75D2604A2020081400605DAD /* ViewController.h */,
-				75D2604B2020081400605DAD /* ViewController.m */,
 				75D2604D2020081400605DAD /* Main.storyboard */,
 				75D260502020081400605DAD /* Assets.xcassets */,
 				75D260522020081400605DAD /* LaunchScreen.storyboard */,
@@ -194,6 +298,7 @@
 		75D2603C2020081400605DAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WJD;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = www.wangjundong.com;
 				TargetAttributes = {
@@ -265,9 +370,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D2604C2020081400605DAD /* ViewController.m in Sources */,
+				75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */,
+				75A351AC20CA2155006FC7BC /* ViewController.m in Sources */,
+				75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */,
 				75D260572020081400605DAD /* main.m in Sources */,
+				75A351A620CA20A7006FC7BC /* WJDNavigationVC.m in Sources */,
 				75D260492020081400605DAD /* AppDelegate.m in Sources */,
+				75BEB62920CE46BC0061D031 /* WJDReflection.m in Sources */,
+				75A351AF20CA6DE3006FC7BC /* WJDTabBar.m in Sources */,
+				75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,8 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5DG6EH88W5;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjd.MyFirstProject;
@@ -444,8 +557,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5DG6EH88W5;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjd.MyFirstProject;
