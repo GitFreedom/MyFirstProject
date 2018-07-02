@@ -24,6 +24,10 @@ static CGFloat const CommonItemButtonHeight = 30.0;
 static CGFloat const CommonDefaultCellHeight = 48.0;
 static CGFloat const CommonNavigationHeight = 48.0;
 
+typedef void(^CommonVoidBlock)(void);
+typedef void(^CommonBoolBlock)(BOOL success);
+typedef void(^CommonIndexBlock)(NSInteger index);
+typedef void(^CommonObjectBlock)(id obj);
 
 #define CommonBgGrayColor      [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1.0]
 #define CommonBgLightGrayColor [UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1.0]
@@ -32,10 +36,33 @@ static CGFloat const CommonNavigationHeight = 48.0;
 #define CommonLightGrayColor   [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0]
 #define CommonRedColor         [UIColor colorWithRed:255/255.0 green: 72/255.0 blue:  0/255.0 alpha:1.0]
 
+#define S
 
-typedef void(^CommonVoidBlock)(void);
-typedef void(^CommonBoolBlock)(BOOL success);
-typedef void(^CommonIndexBlock)(NSInteger index);
-typedef void(^CommonObjectBlock)(id obj);
+
+#define Singleton_del(_type_)\
++ (_type_ *)shareInstance;\
++ (instancetype) alloc __attribute__((unavailable("call sharedInstance instead")));\
++ (instancetype) new __attribute__((unavailable("call sharedInstance instead")));\
+- (instancetype) copy __attribute__((unavailable("call sharedInstance instead")));\
+- (instancetype) mutableCopy __attribute__((unavailable("call sharedInstance instead")));\
+
+#define Singleton_imp(_type_)\
++ (_type_ *)shareInstance{\
+static _type_ *theSharedInstance = nil;\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+theSharedInstance = [[super allocWithZone:nil] init];\
+});\
+return theSharedInstance;\
+}\
++ (instancetype)allocWithZone:(struct _NSZone *)zone {\
+return [_type_ shareInstance];\
+}\
+- (instancetype)copyWithZone:(NSZone *)zone {\
+return [_type_ shareInstance];\
+}\
+- (instancetype)mutableCopyWIthZone:(NSZone *)zone {\
+return [_type_ shareInstance];\
+}\
 
 #endif /* CommonHeader_h */

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7567B8DF20CF4A0600EAE063 /* NSURL+WJDURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8DE20CF4A0600EAE063 /* NSURL+WJDURL.m */; };
+		7567B8E220CF67B200EAE063 /* WJDDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8E120CF67B200EAE063 /* WJDDeviceTool.m */; };
 		75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A220CA207B006FC7BC /* WJDTabBarVC.m */; };
 		75A351A620CA20A7006FC7BC /* WJDNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */; };
 		75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A820CA20D7006FC7BC /* WJDBaseViewController.m */; };
@@ -14,6 +16,7 @@
 		75A351AF20CA6DE3006FC7BC /* WJDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351AE20CA6DE3006FC7BC /* WJDTabBar.m */; };
 		75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351B220CA6E97006FC7BC /* UIView+Frame.m */; };
 		75BEB62920CE46BC0061D031 /* WJDReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEB62820CE46BC0061D031 /* WJDReflection.m */; };
+		75BEB62C20CE58C30061D031 /* WJDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEB62B20CE58C30061D031 /* WJDBaseModel.m */; };
 		75D260492020081400605DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D260482020081400605DAD /* AppDelegate.m */; };
 		75D2604F2020081400605DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D2604D2020081400605DAD /* Main.storyboard */; };
 		75D260512020081400605DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D260502020081400605DAD /* Assets.xcassets */; };
@@ -41,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7567B8DD20CF4A0600EAE063 /* NSURL+WJDURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+WJDURL.h"; sourceTree = "<group>"; };
+		7567B8DE20CF4A0600EAE063 /* NSURL+WJDURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+WJDURL.m"; sourceTree = "<group>"; };
+		7567B8E020CF67B200EAE063 /* WJDDeviceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDDeviceTool.h; sourceTree = "<group>"; };
+		7567B8E120CF67B200EAE063 /* WJDDeviceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDDeviceTool.m; sourceTree = "<group>"; };
 		75A351A120CA207B006FC7BC /* WJDTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDTabBarVC.h; sourceTree = "<group>"; };
 		75A351A220CA207B006FC7BC /* WJDTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDTabBarVC.m; sourceTree = "<group>"; };
 		75A351A420CA20A7006FC7BC /* WJDNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationVC.h; sourceTree = "<group>"; };
@@ -56,6 +63,8 @@
 		75A351B620CA743B006FC7BC /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		75BEB62720CE46BC0061D031 /* WJDReflection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDReflection.h; sourceTree = "<group>"; };
 		75BEB62820CE46BC0061D031 /* WJDReflection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDReflection.m; sourceTree = "<group>"; };
+		75BEB62A20CE58C30061D031 /* WJDBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDBaseModel.h; sourceTree = "<group>"; };
+		75BEB62B20CE58C30061D031 /* WJDBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDBaseModel.m; sourceTree = "<group>"; };
 		75D260442020081400605DAD /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D260472020081400605DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		75D260482020081400605DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +125,8 @@
 		75A3519220CA1E57006FC7BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75BEB62A20CE58C30061D031 /* WJDBaseModel.h */,
+				75BEB62B20CE58C30061D031 /* WJDBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +175,8 @@
 			children = (
 				75A351B120CA6E97006FC7BC /* UIView+Frame.h */,
 				75A351B220CA6E97006FC7BC /* UIView+Frame.m */,
+				7567B8DD20CF4A0600EAE063 /* NSURL+WJDURL.h */,
+				7567B8DE20CF4A0600EAE063 /* NSURL+WJDURL.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -174,6 +187,8 @@
 				75A351B620CA743B006FC7BC /* CommonHeader.h */,
 				75BEB62720CE46BC0061D031 /* WJDReflection.h */,
 				75BEB62820CE46BC0061D031 /* WJDReflection.m */,
+				7567B8E020CF67B200EAE063 /* WJDDeviceTool.h */,
+				7567B8E120CF67B200EAE063 /* WJDDeviceTool.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -299,7 +314,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WJD;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = www.wangjundong.com;
 				TargetAttributes = {
 					75D260432020081400605DAD = {
@@ -371,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */,
+				7567B8E220CF67B200EAE063 /* WJDDeviceTool.m in Sources */,
+				7567B8DF20CF4A0600EAE063 /* NSURL+WJDURL.m in Sources */,
 				75A351AC20CA2155006FC7BC /* ViewController.m in Sources */,
 				75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */,
 				75D260572020081400605DAD /* main.m in Sources */,
@@ -378,6 +395,7 @@
 				75D260492020081400605DAD /* AppDelegate.m in Sources */,
 				75BEB62920CE46BC0061D031 /* WJDReflection.m in Sources */,
 				75A351AF20CA6DE3006FC7BC /* WJDTabBar.m in Sources */,
+				75BEB62C20CE58C30061D031 /* WJDBaseModel.m in Sources */,
 				75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +465,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -454,6 +473,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -481,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -502,6 +522,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -509,6 +530,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -530,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -543,13 +565,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5DG6EH88W5;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjd.MyFirstProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -559,13 +581,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5DG6EH88W5;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyFirstProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjd.MyFirstProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

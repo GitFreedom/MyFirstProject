@@ -10,6 +10,8 @@
 
 @interface WJDReflection : NSObject
 
++ (id)excuteWithObject:(NSObject *)obj MethodName:(NSString *)methodName Argument:(NSArray *)args;
+
 + (id)excuteWithClass:(Class)class MethodName:(NSString *)methodName Argument:(NSArray *)args;
 
 + (id)executeWithClassName:(NSString *)className MethodName:(NSString *)methodName Argument:(NSArray *)args;

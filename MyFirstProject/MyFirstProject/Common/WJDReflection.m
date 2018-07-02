@@ -8,26 +8,15 @@
 
 #import "WJDReflection.h"
 #import <objc/message.h>
+#import "CommonHeader.h"
 
 @implementation WJDReflection
 
-static WJDReflection  *_reflection = nil;
+Singleton_imp(WJDReflection)
 
-+ (instancetype)shareReflection {
++ (id)excuteWithObject:(NSObject *)obj MethodName:(NSString *)methodName Argument:(NSArray *)args {
     
-    if (_reflection != nil) {
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            _reflection = [[super allocWithZone:NULL] init];
-        });
-    }
-    return _reflection;
-}
-+ (id) allocWithZone:(struct _NSZone *)zone {
-    return [WJDReflection shareReflection];
-}
-- (id) copyWithZone:(struct _NSZone *)zone {
-    return [WJDReflection shareReflection];
+    return objc_msgSend(obj, sel_registerName([methodName UTF8String]),[args firstObject]);
 }
 
 + (id)excuteWithClass:(Class)class MethodName:(NSString *)methodName Argument:(NSArray *)args {
