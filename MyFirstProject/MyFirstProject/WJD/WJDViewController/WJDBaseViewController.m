@@ -14,13 +14,48 @@
 
 @interface WJDBaseViewController ()
 
+
 @end
 
 @implementation WJDBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [WJDDeviceTool getAppName];
+    NSString *deviceName = [WJDDeviceTool getDeviceModel];
+    [self initNavigationView];
+}
+- (void)initNavigationView {
+    if (!self.navigationView) {
+        self.navigationView = [[WJDNavigationView alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
+        self.navigationView.backgroundColor = [UIColor whiteColor];
+    }
+    WJDNavigationItem *backItem = [[WJDNavigationItem alloc]init];
+    backItem.style = WJDNavigationItemStyle_image;
+    backItem.imageName = @"homeSearch_back";
+    backItem.imageSize = CGSizeMake(24, 24);
+    backItem.itemSize  = CGSizeMake(44, 44);
+    self.navigationView.leftItemsArray = @[backItem];
+    if (self.title) {
+        WJDNavigationItem *titleItem = [[WJDNavigationItem alloc]init];
+        titleItem.style = WJDNavigationItemStyle_title;
+        titleItem.title = @"标题";
+        titleItem.itemSize = CGSizeMake(self.view.frame.size.width, 44);
+        self.navigationView.middleItemsArray = @[titleItem];
+    }
+    [self.view addSubview:self.navigationView];
+}
+#pragma mark - setter
+- (void)setHiddenNavigation:(BOOL)hiddenNavigation {
+    if (hiddenNavigation != self.hiddenNavigation) {
+        self.hiddenNavigation = hiddenNavigation;
+        if (self.hiddenNavigation) {
+            [self.navigationView removeFromSuperview];
+            self.navigationView = nil;
+        }
+        else {
+            [self initNavigationView];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

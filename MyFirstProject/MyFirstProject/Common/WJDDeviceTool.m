@@ -31,7 +31,12 @@ Singleton_imp(WJDDeviceTool)
  */
 + (nonnull NSString *)getAppName {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    return [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    if ([infoDictionary objectForKey:@"CFBundleDisplayName"]) {
+        return [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    }
+    else {
+        return [infoDictionary objectForKey:@"CFBundleName"];
+    }
 }
 
 
@@ -75,10 +80,109 @@ Singleton_imp(WJDDeviceTool)
  *  @brief:设备相关,取设备信息，return sample :iPhone5,1
  */
 + (nonnull NSString *)getDeviceModel {
-    UIDevice *device = [UIDevice currentDevice];
-    return device.model;
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    return [NSString stringWithCString:systemInfo.machine
+                                            encoding:NSUTF8StringEncoding];
 }
 
+/**
+ *  @brief:设备相关,取设备名称，return sample :iPhoneX
+ */
++ (nonnull NSString *)getDeviceName {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceName = [NSString stringWithCString:systemInfo.machine
+                                            encoding:NSUTF8StringEncoding];
+    if ([deviceName isEqualToString:@"i386"]) {
+        deviceName = @"Simulator";
+    }
+    else if ([deviceName isEqualToString:@"x86_64"]) {
+        deviceName = @"Simulator";
+    }
+    else if ([deviceName isEqualToString:@"iPhone1,1"]) {
+        deviceName = @"";
+    }
+    else if ([deviceName isEqualToString:@"iPhone1,2"]) {
+        deviceName = @"iPhone3G";
+    }
+    else if ([deviceName isEqualToString:@"iPhone2,1"]) {
+        deviceName = @"iPhone3GS";
+    }
+    else if ([deviceName isEqualToString:@"iPhone3,1"]) {
+        deviceName = @"iPhone4";
+    }
+    else if ([deviceName isEqualToString:@"iPhone3,2"]) {
+        deviceName = @"iPhone4";
+    }
+    else if ([deviceName isEqualToString:@"iPhone4,1"]) {
+        deviceName = @"iPhone4s";
+    }
+    else if ([deviceName isEqualToString:@"iPhone5,1"]) {
+        deviceName = @"iPhone5";
+    }
+    else if ([deviceName isEqualToString:@"iPhone5,2"]) {
+        deviceName = @"iPhone5";
+    }
+    else if ([deviceName isEqualToString:@"iPhone5,3"]) {
+        deviceName = @"iPhone5c";
+    }
+    else if ([deviceName isEqualToString:@"iPhone5,4"]) {
+        deviceName = @"iPhone5c";
+    }
+    else if ([deviceName isEqualToString:@"iPhone6,1"]) {
+        deviceName = @"iPhone5s";
+    }
+    else if ([deviceName isEqualToString:@"iPhone6,2"]) {
+        deviceName = @"iPhone5s";
+    }
+    else if ([deviceName isEqualToString:@"iPhone7,1"]) {
+        deviceName = @"iPhone6Plus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone7,2"]) {
+        deviceName = @"iPhone6";
+    }
+    else if ([deviceName isEqualToString:@"iPhone8,1"]) {
+        deviceName = @"iPhone6s";
+    }
+    else if ([deviceName isEqualToString:@"iPhone8,2"]) {
+        deviceName = @"iPhone6sPlus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone8,4"]) {
+        deviceName = @"iPhoneSE";
+    }
+    else if ([deviceName isEqualToString:@"iPhone9,1"]) {
+        deviceName = @"iPhone7";
+    }
+    else if ([deviceName isEqualToString:@"iPhone9,3"]) {
+        deviceName = @"iPhone7";
+    }
+    else if ([deviceName isEqualToString:@"iPhone9,2"]) {
+        deviceName = @"iPhone7Plus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone9,4"]) {
+        deviceName = @"iPhone7Plus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,1"]) {
+        deviceName = @"iPhone8";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,4"]) {
+        deviceName = @"iPhone8";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,2"]) {
+        deviceName = @"iPhone8Plus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,5"]) {
+        deviceName = @"iPhone8Plus";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,3"]) {
+        deviceName = @"iPhoneX";
+    }
+    else if ([deviceName isEqualToString:@"iPhone10,6"]) {
+        deviceName = @"iPhoneX";
+    }
+    return deviceName;
+}
 
 /**
  *  @brief:系统版本

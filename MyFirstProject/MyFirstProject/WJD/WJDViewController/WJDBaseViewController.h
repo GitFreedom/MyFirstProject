@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WJDNavigationView.h"
 
 @interface WJDBaseViewController : UIViewController
+
+/**
+ *  导航栏
+ */
+@property (nonatomic, strong) WJDNavigationView *navigationView;
+/**
+ *  隐藏导航栏
+ */
+@property (nonatomic, assign) BOOL hiddenNavigation;
 
 @end

@@ -16,18 +16,20 @@ Singleton_imp(WJDReflection)
 
 + (id)excuteWithObject:(NSObject *)obj MethodName:(NSString *)methodName Argument:(NSArray *)args {
     
-    return objc_msgSend(obj, sel_registerName([methodName UTF8String]),[args firstObject]);
+    id (*action)(id, SEL, id) = (id (*) (id, SEL, id)) objc_msgSend;
+    return action(obj, sel_registerName([methodName UTF8String]),[args firstObject]);
 }
 
 + (id)excuteWithClass:(Class)class MethodName:(NSString *)methodName Argument:(NSArray *)args {
     
-    return objc_msgSend(class, sel_registerName([methodName UTF8String]),[args firstObject]);
+    id (*action)(id, SEL, id) = (id (*) (id, SEL, id)) objc_msgSend;
+    return action(class, sel_registerName([methodName UTF8String]),[args firstObject]);
 }
 
 + (id)executeWithClassName:(NSString *)className MethodName:(NSString *)methodName Argument:(NSArray *)args {
     
-    id obj = objc_msgSend(objc_getClass([className UTF8String]), sel_registerName("alloc"));
-    return objc_msgSend(obj,sel_registerName([methodName UTF8String]),[args firstObject]);
+    id (*action)(id, SEL, ...) = (id (*) (id, SEL, ...)) objc_msgSend;
+    id obj = action(objc_getClass([className UTF8String]),sel_registerName("alloc"),nil);
+    return action(obj,sel_registerName([methodName UTF8String]),[args firstObject]);
 }
-
 @end

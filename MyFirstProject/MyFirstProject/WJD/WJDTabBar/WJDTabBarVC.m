@@ -33,7 +33,7 @@
     self.viewControllers = self.vcArray;
     for (NSInteger i = 0; i < self.vcArray.count; i++) {
         self.tabBar.items[i].title = self.tabBarTitleArray[i];
-        self.tabBar.items[i].image = [UIImage imageNamed:self.tabBarIconArray[i]];
+//        self.tabBar.items[i].image = [UIImage imageNamed:self.tabBarIconArray[i]];
     }
 }
 #pragma mark - getter

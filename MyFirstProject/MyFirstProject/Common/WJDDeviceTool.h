@@ -38,7 +38,7 @@
 + (nonnull NSString *)getBundleId;
 
 /**
- *  @brief:设备相关,取设备os信息，return sample: iOS7.1
+ *  @brief:设备相关,取设备os信息(系统版本)，return sample: iOS11.4
  */
 + (nonnull NSString *)getDeviceOS;
 
@@ -48,7 +48,12 @@
 + (nonnull NSString *)getDeviceModel;
 
 /**
- *  @brief:系统版本
+ *  @brief:设备相关,取设备名称，return sample :iPhoneX
+ */
++ (nonnull NSString *)getDeviceName;
+
+/**
+ *  @brief:系统版本, return sample: 11.4
  */
 + (CGFloat)systemVersion;
 
@@ -152,11 +157,6 @@
  *  @brief : 是否为5.8寸屏
  */
 + (BOOL)is5_8_inch;
-
-/**
- *  @brief : iPhoneX safe bottom offset
- */
-+ (CGFloat)bottomOffsetFor_5_8_inch;
 
 /**
  *  @brief : bottom offset

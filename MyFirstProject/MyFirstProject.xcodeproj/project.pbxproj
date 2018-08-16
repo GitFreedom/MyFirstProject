@@ -24,6 +24,8 @@
 		75D260572020081400605DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D260562020081400605DAD /* main.m */; };
 		75D260612020081400605DAD /* MyFirstProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D260602020081400605DAD /* MyFirstProjectTests.m */; };
 		75D2606C2020081400605DAD /* MyFirstProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2606B2020081400605DAD /* MyFirstProjectUITests.m */; };
+		75FD576720EC5FED00CBD210 /* WJDNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD576620EC5FED00CBD210 /* WJDNavigationView.m */; };
+		75FD576A20EC601B00CBD210 /* WJDNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD576920EC601B00CBD210 /* WJDNavigationItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		75D260672020081400605DAD /* MyFirstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D2606B2020081400605DAD /* MyFirstProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFirstProjectUITests.m; sourceTree = "<group>"; };
 		75D2606D2020081400605DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FD576520EC5FED00CBD210 /* WJDNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationView.h; sourceTree = "<group>"; };
+		75FD576620EC5FED00CBD210 /* WJDNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDNavigationView.m; sourceTree = "<group>"; };
+		75FD576820EC601B00CBD210 /* WJDNavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationItem.h; sourceTree = "<group>"; };
+		75FD576920EC601B00CBD210 /* WJDNavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDNavigationItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,10 @@
 			children = (
 				75A351A420CA20A7006FC7BC /* WJDNavigationVC.h */,
 				75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */,
+				75FD576520EC5FED00CBD210 /* WJDNavigationView.h */,
+				75FD576620EC5FED00CBD210 /* WJDNavigationView.m */,
+				75FD576820EC601B00CBD210 /* WJDNavigationItem.h */,
+				75FD576920EC601B00CBD210 /* WJDNavigationItem.m */,
 			);
 			path = WJDNavigation;
 			sourceTree = "<group>";
@@ -385,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FD576A20EC601B00CBD210 /* WJDNavigationItem.m in Sources */,
 				75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */,
 				7567B8E220CF67B200EAE063 /* WJDDeviceTool.m in Sources */,
 				7567B8DF20CF4A0600EAE063 /* NSURL+WJDURL.m in Sources */,
@@ -394,6 +405,7 @@
 				75A351A620CA20A7006FC7BC /* WJDNavigationVC.m in Sources */,
 				75D260492020081400605DAD /* AppDelegate.m in Sources */,
 				75BEB62920CE46BC0061D031 /* WJDReflection.m in Sources */,
+				75FD576720EC5FED00CBD210 /* WJDNavigationView.m in Sources */,
 				75A351AF20CA6DE3006FC7BC /* WJDTabBar.m in Sources */,
 				75BEB62C20CE58C30061D031 /* WJDBaseModel.m in Sources */,
 				75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */,
