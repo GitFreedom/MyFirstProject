@@ -7,7 +7,6 @@
 //
 
 #import "WJDDeviceTool.h"
-#import "CommonHeader.h"
 #import <sys/utsname.h>
 
 @interface WJDDeviceTool ()
@@ -299,60 +298,89 @@ Singleton_imp(WJDDeviceTool)
 
 
 /**
- *  @brief:返回状态栏的高度
- *  @param orientation 方向
+ *  @brief:返回状态栏的高度(竖屏的)
  *  @return:返回高度
  */
-+ (CGFloat)statusBarHeightWithOrientation:(UIInterfaceOrientation)orientation {
-    return 0;
++ (CGFloat)statusBarHeight {
+    
+    return [WJDDeviceTool getScreenSize] >= ScreenSizeType_5_8_inch ? 44.0f : 20.0f;
 }
-
 
 /**
- *  @brief: 是否为3.5寸屏
+ *  @brief: 获取屏幕尺寸
  */
-+ (BOOL)is3_5_inch {
-    return YES;
++ (WJDScreenSizeType)getScreenSize {
+    
+    unsigned short screenWidth  = (unsigned short)SCREEN_WIDTH;
+    unsigned short screenHeight = (unsigned short)SCREEN_HEIGHT;
+    switch (screenWidth) {
+        case 320:
+        {
+            switch (screenHeight) {
+                case 480:
+                {
+                    return ScreenSizeType_3_5_inch;
+                }
+                    break;
+                case 568:
+                {
+                    return ScreenSizeType_4_0_inch;
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
+        case 375:
+        {
+            switch (screenHeight) {
+                case 667:
+                {
+                    return ScreenSizeType_4_7_inch;
+                }
+                    break;
+                case 812:
+                {
+                    return ScreenSizeType_5_8_inch;
+                }
+                    break;
+                default:
+                    break;
+            }
+        }
+            break;
+        case 414:
+        {
+            switch (screenHeight) {
+                case 736:
+                {
+                    return ScreenSizeType_5_5_inch;
+                }
+                    break;
+                case 896:
+                {
+                    return [UIScreen mainScreen].scale == 2 ? ScreenSizeType_6_1_inch : ScreenSizeType_6_5_inch;
+                }
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+            break;
+        default:
+            break;
+    }
+    
+    return ScreenSizeType_unknow;
 }
-
-
-/**
- *  @brief: 是否为4寸屏
- */
-+ (BOOL)is4_0_inch {
-    return YES;
-}
-
-
-/**
- *  @brief: 是否为4.7寸屏
- */
-+ (BOOL)is4_7_inch {
-    return YES;
-}
-
-
-/**
- *  @brief: 是否为5.5寸屏
- */
-+ (BOOL)is5_5_inch {
-    return YES;
-}
-
-
-/**
- *  @brief : 是否为5.8寸屏
- */
-+ (BOOL)is5_8_inch {
-    return YES;
-}
-
-
 /**
  *  @brief : bottom offset
  */
 + (CGFloat)bottomOffset {
-    return 0;
+    
+    return [WJDDeviceTool getScreenSize] >= ScreenSizeType_5_8_inch ? 34.0f : 0.0f;
 }
 
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CGGeometry.h>
 #import <UIKit/UIApplication.h>
+#import "CommonHeader.h"
 
 @interface WJDDeviceTool : NSObject
 
@@ -127,36 +128,15 @@
 + (void)removeName:(nonnull NSString *)name;
 
 /**
- *  @brief:返回状态栏的高度
- *  @param orientation 方向
+ *  @brief:返回状态栏的高度(竖屏的)
  *  @return:返回高度
  */
-+ (CGFloat)statusBarHeightWithOrientation:(UIInterfaceOrientation)orientation;
++ (CGFloat)statusBarHeight;
 
 /**
- *  @brief: 是否为3.5寸屏
+ *  @brief: 获取屏幕尺寸
  */
-+ (BOOL)is3_5_inch;
-
-/**
- *  @brief: 是否为4寸屏
- */
-+ (BOOL)is4_0_inch;
-
-/**
- *  @brief: 是否为4.7寸屏
- */
-+ (BOOL)is4_7_inch;
-
-/**
- *  @brief: 是否为5.5寸屏
- */
-+ (BOOL)is5_5_inch;
-
-/**
- *  @brief : 是否为5.8寸屏
- */
-+ (BOOL)is5_8_inch;
++ (WJDScreenSizeType)getScreenSize;
 
 /**
  *  @brief : bottom offset

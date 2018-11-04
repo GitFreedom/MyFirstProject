@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7567B8DF20CF4A0600EAE063 /* NSURL+WJDURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8DE20CF4A0600EAE063 /* NSURL+WJDURL.m */; };
 		7567B8E220CF67B200EAE063 /* WJDDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7567B8E120CF67B200EAE063 /* WJDDeviceTool.m */; };
+		7580FCE9218EAE1200F926E7 /* WJDWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7580FCE8218EAE1200F926E7 /* WJDWaterfallLayout.m */; };
 		75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A220CA207B006FC7BC /* WJDTabBarVC.m */; };
 		75A351A620CA20A7006FC7BC /* WJDNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A520CA20A7006FC7BC /* WJDNavigationVC.m */; };
 		75A351A920CA20D7006FC7BC /* WJDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A351A820CA20D7006FC7BC /* WJDBaseViewController.m */; };
@@ -50,6 +51,8 @@
 		7567B8DE20CF4A0600EAE063 /* NSURL+WJDURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+WJDURL.m"; sourceTree = "<group>"; };
 		7567B8E020CF67B200EAE063 /* WJDDeviceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDDeviceTool.h; sourceTree = "<group>"; };
 		7567B8E120CF67B200EAE063 /* WJDDeviceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDDeviceTool.m; sourceTree = "<group>"; };
+		7580FCE7218EAE1200F926E7 /* WJDWaterfallLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDWaterfallLayout.h; sourceTree = "<group>"; };
+		7580FCE8218EAE1200F926E7 /* WJDWaterfallLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDWaterfallLayout.m; sourceTree = "<group>"; };
 		75A351A120CA207B006FC7BC /* WJDTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDTabBarVC.h; sourceTree = "<group>"; };
 		75A351A220CA207B006FC7BC /* WJDTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJDTabBarVC.m; sourceTree = "<group>"; };
 		75A351A420CA20A7006FC7BC /* WJDNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJDNavigationVC.h; sourceTree = "<group>"; };
@@ -112,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7580FCE6218EADD400F926E7 /* WJDCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7580FCE7218EAE1200F926E7 /* WJDWaterfallLayout.h */,
+				7580FCE8218EAE1200F926E7 /* WJDWaterfallLayout.m */,
+			);
+			path = WJDCollectionView;
+			sourceTree = "<group>";
+		};
 		75A3519020CA1DDD006FC7BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		75A3519A20CA1F6E006FC7BC /* WJD */ = {
 			isa = PBXGroup;
 			children = (
+				7580FCE6218EADD400F926E7 /* WJDCollectionView */,
 				75A3519E20CA2012006FC7BC /* WJDTabBar */,
 				75A3519F20CA2034006FC7BC /* WJDNavigation */,
 				75A351A020CA204D006FC7BC /* WJDViewController */,
@@ -398,6 +411,7 @@
 				75FD576A20EC601B00CBD210 /* WJDNavigationItem.m in Sources */,
 				75A351B320CA6E97006FC7BC /* UIView+Frame.m in Sources */,
 				7567B8E220CF67B200EAE063 /* WJDDeviceTool.m in Sources */,
+				7580FCE9218EAE1200F926E7 /* WJDWaterfallLayout.m in Sources */,
 				7567B8DF20CF4A0600EAE063 /* NSURL+WJDURL.m in Sources */,
 				75A351AC20CA2155006FC7BC /* ViewController.m in Sources */,
 				75A351A320CA207B006FC7BC /* WJDTabBarVC.m in Sources */,

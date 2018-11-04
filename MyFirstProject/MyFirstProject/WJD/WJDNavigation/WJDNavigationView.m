@@ -35,7 +35,7 @@
     return self;
 }
 - (void)tapAction:(UITapGestureRecognizer *)tap {
-    CGPoint tapPoint = [tap locationInView:self];
+//    CGPoint tapPoint = [tap locationInView:self];
     
 }
 - (void)drawRect:(CGRect)rect {

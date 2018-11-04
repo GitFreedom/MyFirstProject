@@ -79,14 +79,16 @@
     }
     return mutableCopyObject;
 }
-- (void)myDemo {
-    NSLog(@"myDemo");
-}
 //调用过程中没实现的方法会在这里面处理
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     
-    class_addMethod(self, sel, commonVoidMethod, "v");
+    class_addMethod(self, sel, (IMP)commonVoidMethod, "v@:");
     return [super resolveInstanceMethod:sel];
+}
++ (BOOL)resolveClassMethod:(SEL)sel {
+    
+    class_addMethod([self class], sel, (IMP)commonVoidMethod, "v@:");
+    return [super resolveClassMethod:sel];
 }
 void commonVoidMethod (id self, SEL _cmd, NSString *obj) {
     

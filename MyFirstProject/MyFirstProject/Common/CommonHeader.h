@@ -11,6 +11,7 @@
 
 #import "UIView+Frame.h"
 
+
 static CGFloat const CommonMargin = 15.0;
 static CGFloat const CommonBigMargin = 20.0;
 static CGFloat const CommonSmallMargin = 10.0;
@@ -36,7 +37,17 @@ typedef void(^CommonObjectBlock)(id obj);
 #define CommonLightGrayColor   [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1.0]
 #define CommonRedColor         [UIColor colorWithRed:255/255.0 green: 72/255.0 blue:  0/255.0 alpha:1.0]
 
-#define S
+
+typedef NS_ENUM(NSInteger, WJDScreenSizeType) {
+    ScreenSizeType_3_5_inch = 0,
+    ScreenSizeType_4_0_inch,
+    ScreenSizeType_4_7_inch,
+    ScreenSizeType_5_5_inch,
+    ScreenSizeType_5_8_inch,
+    ScreenSizeType_6_1_inch,
+    ScreenSizeType_6_5_inch,
+    ScreenSizeType_unknow,
+};
 
 
 #define Singleton_del(_type_)\

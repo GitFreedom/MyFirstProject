@@ -32,7 +32,7 @@
     if (!_title) {
         return;
     }
-    NSMutableDictionary *titleDict = [NSMutableDictionary dictionary];
+    NSMutableDictionary *titleDict = [NSMutableDictionary new];
     if (_titleFont) {
         [titleDict setObject:_titleFont forKey:NSFontAttributeName];
     }

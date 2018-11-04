@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *deviceName = [WJDDeviceTool getDeviceModel];
     [self initNavigationView];
 }
 - (void)initNavigationView {
